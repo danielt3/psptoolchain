@@ -3,5 +3,6 @@
 
  ls /usr/include/usb.h 1> /dev/null || \
  ls /usr/local/include/usb.h 1> /dev/null || \
+ ls /usr/local/include/libusb-1.0 1> /dev/null || \
  ls /opt/local/include/usb.h 1> /dev/null || \
   { echo "ERROR: Install libusb before continuing."; exit 1; }
